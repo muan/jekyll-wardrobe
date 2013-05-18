@@ -1,0 +1,22 @@
+title:            Wardrobe
+description:      A jekyll wardrobe.
+url:              http://wardrobe.muan.co/
+signoff:          Mu-An
+facebook_appid:   
+google_analytics: 
+
+links: 
+  - name:         Home
+    url:          /
+  - name:         Blog
+    url:          http://muan.co
+  - name:         Email
+    url:          mailto:._.@muan.co
+  - name:         GitHub
+    url:          http://github.com/muan
+
+pygments:         true
+permalink:        none
+markdown:         rdiscount
+rdiscount:
+  extensions:     [smart]

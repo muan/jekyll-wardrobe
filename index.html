@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<h1>Blog Posts</h1>
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><time>{{ post.date | date_to_string }}</time> <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
