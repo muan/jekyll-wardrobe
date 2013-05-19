@@ -4,7 +4,7 @@ layout: default
 
   <ul class="posts">
   {% for category in site.categories %}
-    <h3 class="muted">✖ {{ category[0]|upcase }} ({{ category[1].size }}) </h3>
+    <h3 class="muted">{{ category[0]|upcase }} ({{ category[1].size }}) </h3>
     {% for post in category[1] %}
       <li>
         <a href="{{ post.url }}">

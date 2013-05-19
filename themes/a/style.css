@@ -1,25 +1,7 @@
 body {
-  font-family: "Noto Sans", helvetica, verdana, arial, times, "Times New Roman", sans-serif;
-  font-size: 13px;
-  line-height: 1.6em;
   background: #fff;
   color: #404342;
 }
-* { -webkit-font-smoothing: antialiased; }
-* { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
-
-a { color: #345; text-decoration: none; }
-
-h1 a, h2 a { color: inherit; }
-h1, h2, h3, h4, h5 { font-family: "Viga", sans-serif; }
-
-/* helpers */
-
-.inline { display: inline; }
-.muted { color: #999; }
-
-/* styles */
-
 h1 { 
   font-size: 40px; 
   text-transform: uppercase;
@@ -95,12 +77,6 @@ aside {
   font-family: Georgia, serif;
 }
 
-.posts, .posts li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .posts li {
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 20px;
@@ -117,7 +93,7 @@ aside p {
   text-align: left;
   margin: 8px 0 0;
 }
-.avatar { width: 70%; border-radius: 80px; margin: auto; display: block; margin: 10px auto 20px; }
+.avatar { width: 70%; }
 
 article { font-size: 14px; }
 
