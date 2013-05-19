@@ -5,7 +5,7 @@ date: 2013-05-19 21:59:16
 category: Personal
 ---
 
-My thorat is sore.
+My throat is sore.
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
 
