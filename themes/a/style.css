@@ -11,8 +11,15 @@ body {
 a { color: #345; text-decoration: none; }
 
 h1 a, h2 a { color: inherit; }
+h1, h2, h3, h4, h5 { font-family: "Viga", sans-serif; }
 
-h1, h2, h3, h4, h5 { font-family: "Viga", sans-serif }
+/* helpers */
+
+.inline { display: inline; }
+.muted { color: #999; }
+
+/* styles */
+
 h1 { 
   font-size: 40px; 
   text-transform: uppercase;
@@ -102,9 +109,8 @@ aside {
 .posts a {
   display: block;
   padding: 0 0 14px;
-  line-height: 1.3em;
 }
-.posts a h2 { margin: 2px 0 8px; }
+.posts a h2 { margin: 2px 0; line-height: 1.3em; }
 .posts time { display: block; }
 
 aside p {
@@ -119,8 +125,23 @@ article, ul.posts {
   max-width: 560px; 
   width: 100%;
 }
-article header h2{
+article header h2 {
   margin: 0 0 8px 0;
   padding: 0 0 8px 0;
   border-bottom: 1px solid #e0e0e0;
+}
+
+/* queries */
+
+@media (max-width: 900px) {
+  aside {
+    width: 100%;
+    max-width: 560px;
+    margin-left: 0;
+    text-align: left;
+  }
+  aside .avatar {
+    width: 100px; float: left;
+    margin: 0 15px 0 0;
+  }
 }
