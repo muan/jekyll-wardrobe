@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
       {% if page.title %}
-        {% assign title = page.title|append: ' - '|append:site.title %}
+        {% assign title = page.title|append: " - "|append:site.title %}
         {% assign description = page.description %}
       {% else %}
         {% assign title = site.title %}
@@ -20,6 +20,9 @@
       <link rel="stylesheet" href="/css/lib/normalize.min.css">
       <link rel="stylesheet" href="/css/lib/syntax.css">
       <link rel="stylesheet" href="/css/lib/boilerplate.css">
+      <link rel="stylesheet" href="{{ site.theme }}/style.css">
+      <link href="http://fonts.googleapis.com/css?family=Viga" rel="stylesheet" type="text/css">
+      <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
 
       <script src="/js/lib/modernizr-2.6.2.min.js"></script>
       <script src="/js/lib/jquery-1.9.1.min.js"></script>
@@ -30,8 +33,9 @@
     <![endif]-->
     <header>
       <h1><a href="/">{{ site.title }}</a></h1>
+      <p class="description">{{ site.description }}</p>
+      <nav>{% include nav.html %}</nav>
     </header>
-    <nav>{% include nav.html %}</nav>
     <section class="content">{{ content }}</section>
     <footer>
       &copy; 2013

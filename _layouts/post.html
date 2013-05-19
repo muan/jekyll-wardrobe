@@ -4,7 +4,14 @@ layout: default
 <article>
 <header>
 <h2>{{ page.title }}</h2>
+<a class="category">{{ page.category }}</a>
 <time>{{ page.date | date_to_string }}</time>
 </header>
 {{ content }}
 </article>
+
+<aside>
+  <img src="{{ site.owner.avatar }}" alt="{{ site.owner.name }}" class="avatar" />
+  <strong>{{ site.owner.name }}</strong>
+  <p>{{ site.owner.bio }}</p>
+</aside>

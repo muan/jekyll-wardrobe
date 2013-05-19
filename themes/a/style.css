@@ -1,0 +1,126 @@
+body {
+  font-family: "Noto Sans", helvetica, verdana, arial, times, "Times New Roman", sans-serif;
+  font-size: 13px;
+  line-height: 1.6em;
+  background: #fff;
+  color: #404342;
+}
+* { -webkit-font-smoothing: antialiased; }
+* { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+
+a { color: #345; text-decoration: none; }
+
+h1 a, h2 a { color: inherit; }
+
+h1, h2, h3, h4, h5 { font-family: "Viga", sans-serif }
+h1 { 
+  font-size: 40px; 
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 22px;
+}
+html, body { height: 100%; }
+
+body > header {
+  background-color: #131413;
+  padding: 20px 60px;
+  background-image: url(/themes/a/banner.png);
+  background-size: cover;
+  background-position: center center;
+  border-bottom: 1px solid #999898;
+}
+
+body > header * {
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  padding: 20px 0 10px;
+}
+
+nav a { 
+  display: inline-block;
+  margin: 0 20px 10px 0; 
+  padding: 3px;
+}
+
+footer {
+  padding: 40px 60px;
+}
+
+section.content {
+  text-align: left;
+  width: 100%;
+  padding: 40px 60px;
+  clear: both;
+}
+section.content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.category { 
+  line-height: 1em; font-weight: bold; 
+  display: inline-block; margin: 0 3px 4px 0; 
+  text-transform: uppercase; 
+  border-radius: 3px;
+  background-color: #234;
+  color: #fff;
+  padding: 3px;
+  font-size: 10px;
+}
+time { color: #858585; font-size: 11px; text-transform: uppercase; }
+
+aside, article, .posts {
+  float: left;
+}
+
+aside {
+  border: 1px solid #e0e0e0;
+  width: 200px;
+  padding: 20px;
+  margin-left: 20px;
+  text-align: center;
+  border-radius: 3px;
+  font-family: Georgia, serif;
+}
+
+.posts, .posts li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.posts li {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+  display: block;
+}
+.posts a {
+  display: block;
+  padding: 0 0 14px;
+  line-height: 1.3em;
+}
+.posts a h2 { margin: 2px 0 8px; }
+.posts time { display: block; }
+
+aside p {
+  text-align: left;
+  margin: 8px 0 0;
+}
+.avatar { width: 70%; border-radius: 80px; margin: auto; display: block; margin: 10px auto 20px; }
+
+article { font-size: 14px; }
+
+article, ul.posts { 
+  max-width: 560px; 
+  width: 100%;
+}
+article header h2{
+  margin: 0 0 8px 0;
+  padding: 0 0 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+}

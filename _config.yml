@@ -4,19 +4,28 @@ url:              http://wardrobe.muan.co/
 signoff:          Mu-An
 facebook_appid:   
 google_analytics: 
+theme:            /themes/a
+owner:
+  name:           Mu-An Chiou
+  avatar:         'https://secure.gravatar.com/avatar/afd3cc3e385d754183336c859d9e694a?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png'
+  bio:            'I design, code, make funny noises and live in London. I am very nice. Designer-dev looking for new opportunities, get in touch!'
 
 links: 
   - name:         Home
     url:          /
+  - name:         Categories
+    url:          /categories
   - name:         Blog
     url:          http://muan.co
+  - name:         About Me
+    url:          /about
   - name:         Email
     url:          mailto:._.@muan.co
   - name:         GitHub
     url:          http://github.com/muan
 
 pygments:         true
-permalink:        none
+permalink:        pretty
 markdown:         rdiscount
 rdiscount:
   extensions:     [smart]
