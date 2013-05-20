@@ -4,11 +4,13 @@
   margin-top: 0; }
 
 body {
-  background-image: -webkit-linear-gradient(-45deg, #aaccee, #aaddff, #bbccdd, #ccddee);
-  background-image: -moz-linear-gradient(-45deg, #aaccee, #aaddff, #bbccdd, #ccddee);
-  background-image: -ms-linear-gradient(-45deg, #aaccee, #aaddff, #bbccdd, #ccddee);
-  background-image: -o-linear-gradient(-45deg, #aaccee, #aaddff, #bbccdd, #ccddee);
-  background-image: linear-gradient(-45deg, #aaccee, #aaddff, #bbccdd, #ccddee);
+  background-image: -webkit-linear-gradient(-45deg, #dedade, #ededef, #ccdfee, #edefed);
+  background-image: -moz-linear-gradient(-45deg, #dedade, #ededef, #ccdfee, #edefed);
+  background-image: -ms-linear-gradient(-45deg, #dedade, #ededef, #ccdfee, #edefed);
+  background-image: -o-linear-gradient(-45deg, #dedade, #ededef, #ccdfee, #edefed);
+  background-image: linear-gradient(-45deg, #dedade, #ededef, #ccdfee, #edefed);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 20px;
   font-size: 14px; }
   body > header, body .content, body footer {
@@ -23,8 +25,8 @@ body {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px; }
     body > header h1 {
-      text-transform: uppercase;
-      color: #484949; }
+      color: #484949;
+      font-size: 22px; }
   body > footer {
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px; }
