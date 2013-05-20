@@ -1,5 +1,4 @@
 body {
-  font-family: "Noto Sans", helvetica, verdana, arial, times, "Times New Roman", sans-serif;
   font-size: 13px;
   line-height: 1.6em;
 }
@@ -9,7 +8,6 @@ body {
 a { color: #345; text-decoration: none; }
 
 h1 a, h2 a { color: inherit; }
-h1, h2, h3, h4, h5 { font-family: "Viga", sans-serif; }
 
 .posts, .posts li {
   list-style: none;
@@ -17,6 +15,8 @@ h1, h2, h3, h4, h5 { font-family: "Viga", sans-serif; }
   padding: 0;
 }
 
+
+.categories h3 { text-transform: capitalize; }
 .avatar { border-radius: 80px; margin: auto; display: block; margin: 10px auto 20px;  }
 
 /* helpers */
