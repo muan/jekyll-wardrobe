@@ -11,6 +11,24 @@ layout: default
 </article>
 
 <aside>
+  <section class="previous-next">
+  {% if page.previous %}
+    <div class="previous">
+      <a href="{{ page.previous.url }}">
+        {{ page.previous.title }}
+        <div class="excerpt">{{ page.previous.excerpt|strip_html }}</div>
+      </a>
+    </div>
+  {% endif %}
+  {% if page.next %}
+    <div class="next">
+      <a href="{{page.next.url}}">
+        {{ page.next.title }}
+        <div class="excerpt">{{ page.next.excerpt|strip_html }}</div>
+      </a>
+    </div>
+  {% endif %}
+  </section>
   <img src="{{ site.owner.avatar }}" alt="{{ site.owner.name }}" class="avatar" />
   <strong>{{ site.owner.name }}</strong>
   <p>{{ site.owner.bio }}</p>

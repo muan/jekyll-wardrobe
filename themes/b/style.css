@@ -86,11 +86,39 @@ article header {
 
 aside {
   border-top: 1px solid #ddd;
-  padding-top: 30px;
+  padding-top: 15px;
   margin: 30px auto 0; }
   aside .avatar {
     width: 90px;
     float: left;
     margin: 0 15px 0 0; }
+  aside .previous-next {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd; }
+  aside .previous, aside .next {
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #858585; }
+    aside .previous:before, aside .next:before {
+      text-transform: uppercase;
+      font-size: 11px;
+      padding-right: 6px;
+      width: 60px;
+      display: inline-block;
+      vertical-align: baseline;
+      zoom: 1;
+      *display: inline;
+      *vertical-align: auto; }
+    aside .previous .excerpt, aside .next .excerpt {
+      display: none; }
+  aside .previous {
+    margin-bottom: 8px; }
+  aside .previous:before {
+    content: "Previous"; }
+  aside .next:before {
+    content: "Next"; }
   aside p {
     margin: 0; }
