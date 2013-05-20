@@ -1,5 +1,8 @@
+.sass-cache/
 _site/
+_scss/
 build/
 server/
 .rvmrc
 .DS_Store
+Rakefile
