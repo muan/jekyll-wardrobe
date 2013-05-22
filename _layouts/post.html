@@ -14,7 +14,7 @@ layout: default
   <section class="previous-next">
   {% if page.previous %}
     <div class="previous">
-      <a href="{{ page.previous.url }}">
+      <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">
         {{ page.previous.title }}
         <div class="excerpt">{{ page.previous.excerpt|strip_html }}</div>
       </a>
@@ -22,7 +22,7 @@ layout: default
   {% endif %}
   {% if page.next %}
     <div class="next">
-      <a href="{{page.next.url}}">
+      <a href="{{page.next.url}}" title="{{ page.next.title }}">
         {{ page.next.title }}
         <div class="excerpt">{{ page.next.excerpt|strip_html }}</div>
       </a>

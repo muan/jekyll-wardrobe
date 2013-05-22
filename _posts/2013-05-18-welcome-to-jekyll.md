@@ -5,14 +5,17 @@ date:   2013-05-18 21:57:45
 category: Onboarding
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+# HEY!!!!!
 
-## No No
+Wardrobe is where I keep all the themes <del>clothes</del> I coded <del>bought</del>.
 
-Jekyll also offers powerful support for code snippets:
+## Facts
 
-### No!
+Stuff about Wardrobe.
+
+### Jekyll features
+
+#### Code highlighting
 
 {% highlight ruby %}
 def print_hi(name)
@@ -22,7 +25,25 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+#### Categories
 
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+Categories appear under the title of each post on post page, and the category index, if you don't want to use it, just don't assign a category to posts.
+
+
+## To-Dos
+
+1. Pagination
+2. Syntax highlighting code for each theme
+3. Style titles
+4. Pretty date
+5. Instruction
+6. RSS feed
+7. Category links
+8. Signoff
+9. Move things out of includes
+10. Style blockquotes
+11. Check image and iframe presentations in posts
+
+## And...
+
+Why am I doing this?

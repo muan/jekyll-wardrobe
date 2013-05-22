@@ -86,6 +86,7 @@ header nav {
 
 .content {
   padding: 25px 60px;
+  position: relative;
   border-top-color: transparent;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px; }
@@ -110,7 +111,7 @@ header nav {
 
 aside {
   margin: 30px -60px 0;
-  padding: 30px 60px 0;
+  padding: 25px 60px 0;
   border-top: 1px solid #efefef; }
   aside p {
     margin: 3px 0 0; }
@@ -130,3 +131,70 @@ article .category {
 article time {
   color: #999;
   font-size: 11px; }
+article .highlight {
+  margin: 10px -60px;
+  padding: 3px 60px;
+  border-radius: 0; }
+
+.previous-next .previous a, .previous-next .next a {
+  background-color: transparent;
+  border: 0;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  opacity: 0.6; }
+  .previous-next .previous a:before, .previous-next .previous a:after, .previous-next .next a:before, .previous-next .next a:after {
+    position: absolute;
+    font-family: sans-serif;
+    display: block;
+    content: " "; }
+  .previous-next .previous a:hover, .previous-next .next a:hover {
+    opacity: 1; }
+.previous-next .previous a {
+  margin-left: -360px; }
+  .previous-next .previous a:before {
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 20px;
+    border-right-color: #e0e0e0; }
+  .previous-next .previous a:after {
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 20px;
+    border-right-color: #f9f9f9;
+    margin-left: 2px; }
+.previous-next .next a {
+  margin-left: 320px; }
+  .previous-next .next a:before {
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 20px;
+    border-left-color: #e0e0e0; }
+  .previous-next .next a:after {
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 20px;
+    border-left-color: #f9f9f9;
+    margin-left: -2px; }
+.previous-next .excerpt {
+  display: none; }
+
+@media (max-width: 480px) {
+  .content {
+    padding: 20px; } }
