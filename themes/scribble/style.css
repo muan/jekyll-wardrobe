@@ -174,7 +174,7 @@ article .highlight {
     border-style: solid;
     border-width: 20px;
     border-right-color: #f9f9f9;
-    margin-left: 2px; }
+    margin-left: 5px; }
 .previous-next .next a {
   margin-left: 320px; }
   .previous-next .next a:before {
@@ -191,7 +191,7 @@ article .highlight {
     border-style: solid;
     border-width: 20px;
     border-left-color: #f9f9f9;
-    margin-left: -2px; }
+    margin-left: -5px; }
 .previous-next .excerpt {
   display: none; }
 
