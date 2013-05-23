@@ -1,10 +1,10 @@
 body {
   background: #fff;
   color: #404342;
-  font-family: "Noto Sans", helvetica,arial, sans-serif; }
+  font-family: helvetica,arial, sans-serif; }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Viga", sans-serif; }
+  font-family: "PT Serif", sans-serif; }
 
 h1 {
   font-size: 40px;
@@ -18,7 +18,7 @@ html, body {
 
 body > header {
   background-color: #131413;
-  padding: 20px 60px;
+  padding: 40px 60px;
   background-image: url(/themes/a/banner.png);
   background-size: cover;
   background-position: center center;
@@ -74,17 +74,85 @@ time {
     text-transform: none;
     color: #858585; }
 
-aside, article, .posts {
-  float: left; }
+aside, article, .posts, .pagination {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  vertical-align: top; }
+
+.recent-posts {
+  margin: -10px -20px 15px;
+  text-align: left;
+  padding: 0 15px 10px; }
+  .recent-posts .excerpt {
+    display: none; }
+  .recent-posts a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+    .recent-posts a:before {
+      color: #999; }
+  .recent-posts .next-post a:before {
+    content: "Next: "; }
+  .recent-posts .previous-post a:before {
+    content: "Previous: "; }
+
+.pagination {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  width: 200px;
+  white-space: nowrap;
+  position: absolute;
+  border: 1px solid #eee;
+  padding: 8px 0;
+  color: #999;
+  margin-left: 20px; }
+  .pagination .next-page, .pagination .previous-page {
+    width: 60px;
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto; }
+  .pagination:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.pagination + aside {
+  margin-top: 30px;
+  border-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
 
 aside {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #eee;
   width: 200px;
   padding: 20px;
   margin-left: 20px;
   text-align: center;
   border-radius: 3px;
   font-family: Georgia, serif; }
+  aside:before {
+    content: " ";
+    display: block;
+    clear: both; }
+  aside p {
+    text-align: left;
+    margin: 8px 0 0; }
+  aside > *:not(.recent-posts) {
+    -webkit-transition: opacity, 0.8s;
+    -moz-transition: opacity, 0.8s;
+    -ms-transition: opacity, 0.8s;
+    -o-transition: opacity, 0.8s;
+    transition: opacity, 0.8s;
+    opacity: 0.2; }
+    aside > *:not(.recent-posts):hover ~ *, aside > *:not(.recent-posts):hover {
+      opacity: 1; }
 
 .posts li {
   border-bottom: 1px solid #e0e0e0;
@@ -101,12 +169,8 @@ aside {
 .posts time {
   display: block; }
 
-aside p {
-  text-align: left;
-  margin: 8px 0 0; }
-
 .avatar {
-  width: 70%; }
+  width: 60%; }
 
 article {
   font-size: 14px; }

@@ -21,8 +21,10 @@ body > footer a { color: #808080; }
 
 .categories h3 { text-transform: capitalize; }
 .avatar { border-radius: 80px; margin: auto; display: block; margin: 10px auto 20px;  }
+.pagination { text-align: center; }
 
 /* helpers */
 
 .inline { display: inline; }
 .muted { color: #999; }
+.invisible { visibility: hidden; }

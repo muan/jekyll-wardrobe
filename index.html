@@ -3,7 +3,7 @@ layout: default
 ---
 
 <ul class="posts">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <li>
       <a href="{{ post.url }}">
         <h2>{{ post.title }}</h2>
@@ -12,6 +12,11 @@ layout: default
     </li>
   {% endfor %}
 </ul>
+<section class="pagination">
+  <a href="/{{ paginator.previous_page_path }}" class="previous-page{% unless paginator.previous_page %} invisible{% endunless %}">Previous</a>
+  {{ paginator.page }} of {{ paginator.total_pages }}
+  <a href="/{{ paginator.next_page_path }}" class="next-page{% unless paginator.next_page %} invisible{% endunless %}">Next</a>
+</section>
 <aside>
   <img src="{{ site.owner.avatar }}" alt="{{ site.owner.name }}" class="avatar" />
   <strong>{{ site.owner.name }}</strong>

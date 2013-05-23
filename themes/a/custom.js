@@ -1,5 +1,5 @@
 WebFontConfig = {
-  google: { families: [ 'Viga', 'Noto Sans' ] }
+  google: { families: [ 'PT Serif' ] }
 };
 (function() {
   var wf = document.createElement('script');

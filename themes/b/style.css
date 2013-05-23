@@ -92,17 +92,17 @@ aside {
     width: 90px;
     float: left;
     margin: 0 15px 0 0; }
-  aside .previous-next {
+  aside .recent-posts {
     margin-bottom: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #ddd; }
-  aside .previous, aside .next {
+  aside .previous-post, aside .next-post {
     white-space: nowrap;
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     color: #858585; }
-    aside .previous:before, aside .next:before {
+    aside .previous-post:before, aside .next-post:before {
       text-transform: uppercase;
       font-size: 11px;
       padding-right: 6px;
@@ -112,13 +112,13 @@ aside {
       zoom: 1;
       *display: inline;
       *vertical-align: auto; }
-    aside .previous .excerpt, aside .next .excerpt {
+    aside .previous-post .excerpt, aside .next-post .excerpt {
       display: none; }
-  aside .previous {
-    margin-bottom: 8px; }
-  aside .previous:before {
+  aside .previous-post + .next-post {
+    margin-top: 8px; }
+  aside .previous-post:before {
     content: "Previous"; }
-  aside .next:before {
+  aside .next-post:before {
     content: "Next"; }
   aside p {
     margin: 0; }
