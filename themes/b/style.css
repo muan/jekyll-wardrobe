@@ -1,7 +1,5 @@
 body, h1, h2, h3, h4, h5 {
-  font-family: "Open Sans";
-  font-weight: normal;
-  margin-top: 0; }
+  font-family: "Open Sans"; }
 
 body {
   background-image: -webkit-linear-gradient(-45deg, #dedade, #ededef, #ccdfee, #edefed);
@@ -12,6 +10,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 20px;
+  color: #404142;
   font-size: 14px; }
   body > header, body .content, body footer {
     background: #fff;
@@ -55,7 +54,8 @@ time {
 .posts li {
   margin-bottom: 10px; }
 .posts h2 {
-  margin: 0 0 6px 0; }
+  margin: 0 0 3px 0;
+  font-weight: normal; }
 
 .posts, article, aside {
   width: 100%;

@@ -1,5 +1,5 @@
 WebFontConfig = {
-  google: { families: [ 'Open Sans' ] }
+  google: { families: [ 'Open Sans:400,700' ] }
 };
 (function() {
   var wf = document.createElement('script');

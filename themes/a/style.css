@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background: #fff;
   color: #404342;
@@ -5,13 +6,6 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: "PT Serif", sans-serif; }
-
-h1 {
-  font-size: 40px;
-  text-transform: uppercase; }
-
-h2 {
-  font-size: 22px; }
 
 html, body {
   height: 100%; }
@@ -39,16 +33,15 @@ nav a {
 footer {
   padding: 40px 60px; }
 
-section.content {
+.content {
   text-align: left;
   width: 100%;
   padding: 40px 60px;
   clear: both; }
-
-section.content:after {
-  content: " ";
-  display: block;
-  clear: both; }
+  .content:after {
+    content: " ";
+    display: block;
+    clear: both; }
 
 .categories h3 {
   font-family: "Noto Sans", sans-serif;
@@ -74,43 +67,44 @@ time {
     text-transform: none;
     color: #858585; }
 
-aside, article, .posts, .pagination {
-  display: inline-block;
-  vertical-align: baseline;
-  zoom: 1;
-  *display: inline;
-  *vertical-align: auto;
-  vertical-align: top; }
+.posts, article {
+  float: left; }
+
+aside, .pagination {
+  margin-left: 600px;
+  width: 200px; }
 
 .recent-posts {
-  margin: -10px -20px 15px;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
   text-align: left;
-  padding: 0 15px 10px; }
+  border-bottom: 1px solid #e0e0e0; }
   .recent-posts .excerpt {
-    display: none; }
-  .recent-posts a {
-    display: block;
-    width: 100%;
+    color: #999;
+    font-size: 12px;
+    font-style: italic;
+    max-height: 2.6em;
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis; }
-    .recent-posts a:before {
-      color: #999; }
+    line-height: 1.3em; }
+  .recent-posts a:before {
+    color: #d8d8d8;
+    font-size: 9px;
+    padding: 0 3px 0 0; }
   .recent-posts .next-post a:before {
-    content: "Next: "; }
+    content: "▶ "; }
   .recent-posts .previous-post a:before {
-    content: "Previous: "; }
+    content: "◀ "; }
+  .recent-posts .previous-post + .next-post {
+    margin-top: 15px; }
 
 .pagination {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  width: 200px;
   white-space: nowrap;
-  position: absolute;
+  clear: right;
   border: 1px solid #eee;
   padding: 8px 0;
-  color: #999;
-  margin-left: 20px; }
+  margin-bottom: 15px;
+  border-radius: 3px;
+  color: #999; }
   .pagination .next-page, .pagination .previous-page {
     width: 60px;
     display: inline-block;
@@ -118,41 +112,17 @@ aside, article, .posts, .pagination {
     zoom: 1;
     *display: inline;
     *vertical-align: auto; }
-  .pagination:after {
-    content: " ";
-    display: block;
-    clear: both; }
-
-.pagination + aside {
-  margin-top: 30px;
-  border-top: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0; }
 
 aside {
   border: 1px solid #eee;
-  width: 200px;
-  padding: 20px;
-  margin-left: 20px;
-  text-align: center;
+  padding: 15px;
   border-radius: 3px;
   font-family: Georgia, serif; }
-  aside:before {
-    content: " ";
-    display: block;
-    clear: both; }
   aside p {
     text-align: left;
     margin: 8px 0 0; }
-  aside > *:not(.recent-posts) {
-    -webkit-transition: opacity, 0.8s;
-    -moz-transition: opacity, 0.8s;
-    -ms-transition: opacity, 0.8s;
-    -o-transition: opacity, 0.8s;
-    transition: opacity, 0.8s;
-    opacity: 0.2; }
-    aside > *:not(.recent-posts):hover ~ *, aside > *:not(.recent-posts):hover {
-      opacity: 1; }
+  aside .avatar {
+    display: none; }
 
 .posts li {
   border-bottom: 1px solid #e0e0e0;
@@ -181,12 +151,15 @@ article, ul.posts {
 
 article header h2 {
   margin: 0 0 8px 0;
-  padding: 0 0 8px 0;
+  padding: 8px 0;
   border-bottom: 1px solid #e0e0e0; }
 
 /* queries */
 @media (max-width: 900px) {
-  aside {
+  article, .posts {
+    position: static; }
+
+  aside, .pagination {
     width: 100%;
     max-width: 560px;
     margin-left: 0;
