@@ -12,11 +12,13 @@ layout: default
     </li>
   {% endfor %}
 </ul>
+{% unless paginator.total_pages == 1 %}
 <section class="pagination">
   <a href="/{{ paginator.previous_page_path }}" class="previous-page{% unless paginator.previous_page %} invisible{% endunless %}">Previous</a>
   {{ paginator.page }} of {{ paginator.total_pages }}
   <a href="/{{ paginator.next_page_path }}" class="next-page{% unless paginator.next_page %} invisible{% endunless %}">Next</a>
 </section>
+{% endunless %}
 <aside>
   <img src="{{ site.owner.avatar }}" alt="{{ site.owner.name }}" class="avatar" />
   <strong>{{ site.owner.name }}</strong>

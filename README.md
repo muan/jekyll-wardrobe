@@ -9,15 +9,16 @@ This is work in progress, come back later. Star the repo or follow me on [Twitte
 
 1. <del>Pagination</del>
 2. Syntax highlighting code for each theme
-3. Style titles
+3. <del>Style titles</del>
 4. Pretty date
 5. <del>Instruction</del>
-6. RSS feed
+6. <del>RSS feed</del>
 7. Category links
 8. Signoff
 9. <del>Move things out of includes</del>
-10. Style blockquotes
+10. <del>Style blockquotes</del>
 11. Check image and iframe presentations in posts
+12. Confirm installation commands
 
 ---
 
