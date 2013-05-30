@@ -5,15 +5,19 @@ date:   2013-05-18 21:57:45
 category: Onboarding
 ---
 
-# HEY!!!!!
+Wardrobe is where I keep all the themes <del>clothes</del> I coded <del>bought</del>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
 
-Wardrobe is where I keep all the themes <del>clothes</del> I coded <del>bought</del>.
+# Making a point
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
 ## Facts
 
 Stuff about Wardrobe.
 
 ### Jekyll features
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 
 #### Code highlighting
 
@@ -25,10 +29,13 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+
 #### Categories
 
 Categories appear under the title of each post on post page, and the category index, if you don't want to use it, just don't assign a category to posts.
 
+---
 
 ## To-Dos
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I am a placeholder post
+title: Do not use default_scope
 category: onboarding
 ---
 
