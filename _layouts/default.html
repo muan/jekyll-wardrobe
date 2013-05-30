@@ -17,28 +17,41 @@
       <meta name="viewport" content="width=device-width">
       <meta name="description" content="{{ site.description }}">
 
-      <link rel="stylesheet" href="/css/lib/normalize.min.css">
-      <link rel="stylesheet" href="/css/lib/syntax.css">
-      <link rel="stylesheet" href="/css/lib/boilerplate.css">
-      <link rel="stylesheet" href="/css/lib/basics.css">
-      <link rel="stylesheet" href="/themes/{{ site.theme }}/style.css">
-      <script src="/themes/{{ site.theme }}/custom.js"></script>
-
-      <script src="/js/lib/modernizr-2.6.2.min.js"></script>
-      <script src="/js/lib/jquery-1.9.1.min.js"></script>
+      <link rel="stylesheet" href="{{ site.baseurl }}themes/-global/css/normalize.min.css">
+      <link rel="stylesheet" href="{{ site.baseurl }}themes/-global/css/syntax.css">
+      <link rel="stylesheet" href="{{ site.baseurl }}themes/-global/css/boilerplate.css">
+      <link rel="stylesheet" href="{{ site.baseurl }}themes/-global/css/basics.css">
+      <script src="{{ site.baseurl }}themes/-global/js/modernizr-2.6.2.min.js"></script>
+      <script src="{{ site.baseurl }}themes/-global/js/jquery-1.9.1.min.js"></script>
+      <script type='text/javascript'>
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
+          _gaq.push(['_trackPageview']);
+          
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+      </script>
+      
+      <link rel="stylesheet" href="{{ site.baseurl }}themes/{{ site.theme }}/style.css">
+      <script src="{{ site.baseurl }}themes/{{ site.theme }}/custom.js"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
+
     <header>
       <h1><a href="/" title="{{ site.title }}">{{ site.title }}</a></h1>
       <p class="description">{{ site.description }}</p>
-      <nav>{% include nav.html %}</nav>
+      <nav>{% for link in site.links %}<a target="_top" href="{{ link.url }}">{{ link.name }}</a>{% endfor %}</nav>
     </header>
     <section class="content">{{ content }}</section>
     <footer>
       built with Jekyll using <a href="https://github.com/muan/jekyll-wardrobe">Wardrobe</a>
     </footer>
+
   </body>
 </html>
