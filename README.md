@@ -33,7 +33,7 @@ This is work in progress, come back later. Star the repo or follow me on [Twitte
 
 #### Instruction for existing Jekyll sites
 
-1\. Clone both **_layouts** and **themes** folders, make sure you're using the cloned layouts for pages <br />
+1\. Clone both **_layouts** and **themes** folders and also `index.html`, `about.html` and `categories.html`; make sure you're using the cloned layouts for pages <br />
 2\. 
 Set the following variables in `_config.yml`  
 
