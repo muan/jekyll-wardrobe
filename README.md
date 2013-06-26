@@ -19,6 +19,7 @@ This is work in progress, come back later. Star the repo or follow me on [Twitte
 10. <del>Style blockquotes</del>
 11. Check image and iframe presentations in posts
 12. Confirm installation commands
+13. Move theme layouts to _include
 
 ---
 
@@ -28,7 +29,7 @@ This is work in progress, come back later. Star the repo or follow me on [Twitte
 2. Clone your forked repository to your computer
 3. Go to your directory and edit `_config.yml` to your preference
 4. `gem install jekyll`
-5. And you're all set, run `jeykll serve -w` and your site should be up at `http://localhost:4000`
+5. And you're all set, run `jekyll build` and then `jeykll serve -w`. Your site should be up at `http://localhost:4000`
 
 ---
 
