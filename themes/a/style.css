@@ -152,17 +152,26 @@ article, ul.posts {
 article header h2 {
   margin: 0 0 8px 0;
   padding: 8px 0;
+  line-height: 1.1em;
   border-bottom: 1px solid #e0e0e0; }
 
 /* queries */
 @media (max-width: 900px) {
+  body header, footer, .content {
+    padding: 20px 30px; }
+
   article, .posts {
     position: static; }
 
+  article header {
+    padding: 0; }
+
   aside, .pagination {
+    border: 0;
     width: 100%;
     max-width: 560px;
     margin-left: 0;
+    padding: 0px;
     text-align: left; }
 
   aside .avatar {
