@@ -13,7 +13,7 @@ html, body {
 body > header {
   background-color: #131413;
   padding: 40px 60px;
-  background-image: url(/themes/a/banner.png);
+  background-image: url(banner.png);
   background-size: cover;
   background-position: center center;
   border-bottom: 1px solid #999898; }
