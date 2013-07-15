@@ -20,6 +20,7 @@ This is work in progress, come back later. Star the repo or follow me on [Twitte
 11. Check image and iframe presentations in posts
 12. Confirm installation commands
 13. Move theme layouts to _include
+14. Update to Jekyll 1.1.0
 
 ---
 
