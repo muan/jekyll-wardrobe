@@ -30,7 +30,7 @@ This is work in progress, come back later. Star the repo or follow me on [Twitte
 2. Clone your forked repository to your computer
 3. Go to your directory and edit `_config.yml` to your preference
 4. `gem install jekyll`
-5. And you're all set, run `jekyll build` and then `jeykll serve -w`. Your site should be up at `http://localhost:4000`
+5. And you're all set, run `jekyll build` and then `jekyll serve -w`. Your site should be up at `http://localhost:4000`
 
 * Add **baseurl** in your config file if your blog is not sitting on root.
 
